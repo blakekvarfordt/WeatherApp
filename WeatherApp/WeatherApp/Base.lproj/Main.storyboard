@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="DJM-9w-vLf">
+            <objects>
+                <viewController id="f89-kR-V6F" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NFM-BS-L32">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="75" translatesAutoresizingMaskIntoConstraints="NO" id="pH8-C8-wIT">
+                                <rect key="frame" x="131" y="336" width="153" height="169"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hpV-U5-EBI">
+                                        <rect key="frame" x="0.0" y="0.0" width="153" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="Los Angeles"/>
+                                        <connections>
+                                            <segue destination="oTk-9B-viM" kind="show" identifier="fromLA" id="8XO-j5-0wh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Da-Z7-RWp">
+                                        <rect key="frame" x="41" y="122" width="71" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                        <state key="normal" title="Provo"/>
+                                        <connections>
+                                            <segue destination="oTk-9B-viM" kind="show" identifier="fromProvo" id="Iqf-Sp-2w7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pH8-C8-wIT" firstAttribute="top" secondItem="vvJ-ga-1nx" secondAttribute="top" constant="292" id="6OP-AV-483"/>
+                            <constraint firstItem="pH8-C8-wIT" firstAttribute="leading" secondItem="vvJ-ga-1nx" secondAttribute="leading" constant="131" id="EJt-kX-caB"/>
+                            <constraint firstItem="vvJ-ga-1nx" firstAttribute="bottom" secondItem="pH8-C8-wIT" secondAttribute="bottom" constant="357" id="vTA-yi-wEf"/>
+                            <constraint firstItem="vvJ-ga-1nx" firstAttribute="trailing" secondItem="pH8-C8-wIT" secondAttribute="trailing" constant="130" id="zYj-ds-VUC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="vvJ-ga-1nx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DVm-Dc-xWp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="155"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Egk-5p-XAn">
+            <objects>
+                <viewController id="oTk-9B-viM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8iz-Q1-YRb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="uKO-S1-quj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOD-Sr-wls">
+                                        <rect key="frame" x="184" y="0.0" width="46.5" height="99"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d29-UA-GP4">
+                                        <rect key="frame" x="163.5" y="180" width="87" height="98.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="temp tom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aU2-La-jxJ">
+                                        <rect key="frame" x="170.5" y="359.5" width="73.5" height="99"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33Z-py-FUT">
+                                        <rect key="frame" x="164" y="539.5" width="86" height="98.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="icon status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KqM-XF-Tru">
+                                        <rect key="frame" x="165" y="719" width="84" height="99"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uKO-S1-quj" firstAttribute="leading" secondItem="g8R-p1-828" secondAttribute="leading" id="8RG-cM-AWB"/>
+                            <constraint firstItem="uKO-S1-quj" firstAttribute="top" secondItem="g8R-p1-828" secondAttribute="top" id="GMl-Sk-jkk"/>
+                            <constraint firstItem="g8R-p1-828" firstAttribute="trailing" secondItem="uKO-S1-quj" secondAttribute="trailing" id="h8y-zQ-oBS"/>
+                            <constraint firstItem="g8R-p1-828" firstAttribute="bottom" secondItem="uKO-S1-quj" secondAttribute="bottom" id="sK8-5I-ovG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="g8R-p1-828"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y3e-pR-g8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1396" y="155"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="8XO-j5-0wh"/>
+    </inferredMetricsTieBreakers>
+</document>
